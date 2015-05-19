@@ -11,7 +11,7 @@ def show_help():
 
 def show_list():
 	count = 1
-	for item in shopping_list():
+	for item in shopping_list:
 		print("{}: {}".format(count,item))
 		count += 1
 
@@ -20,7 +20,7 @@ show_help()
 
 while True:
 	new_stuff = input("> ")
-
+	
 	if new_stuff == "DONE":
 		print("\nHere is your list")
 		show_list()
@@ -34,7 +34,7 @@ while True:
 	elif new_stuff == "REMOVE":
 		show_list()
 		idx = input("Which item would you like to remove? Tell me the number")
-		remove_list(int(idx))
+		remove_item(int(idx))
 		continue
 	else:
 		new_list = new_stuff.split(",")
@@ -47,5 +47,6 @@ while True:
 				shopping_list.insert(spot, item.strip())
 				spot += 1
 		else:
-			for item in new_list:
+			for item in new_list: 
 				shopping_list.append(item.strip())
+			
