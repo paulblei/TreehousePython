@@ -49,4 +49,3 @@ while True:
 		else:
 			for item in new_list: 
 				shopping_list.append(item.strip())
-			
