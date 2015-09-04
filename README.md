@@ -1,3 +1,3 @@
 # TreehousePython
  
- This Repo is for the Treehouse course
+ This Repo is for the Treehouse course Python
